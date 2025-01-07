@@ -65,7 +65,7 @@ const About_Us_Skills = () => {
   ];
 
   return (
-    <section className="bg-[#faf5fa] py-24">
+    <section className="py-24">
       <div className="container mx-auto px-5">
         {/* Section Header */}
         <div className="text-center mb-12">
