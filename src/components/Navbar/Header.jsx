@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../assets/logo.png";
-import { Link, Links } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { FaAlignRight } from "react-icons/fa6";
+import { FaTimes, FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
+
 
 const Header = () => {
   const menuItems = [
@@ -17,17 +20,29 @@ const Header = () => {
     // },
     {
       name: "Projects",
+      link: "/chethan-jodidhar/projects",
     },
     {
       name: "Gallery",
     },
     {
       name: "Contact",
+      link: "/chethan-jodidhar/contact",
     },
   ];
+
+  const [toggle, setToggle] = useState(false);
+
+  const toggleMenu = () => {
+    setToggle((prevState) => !prevState);
+  };
+
+
   return (
-    <main className="">
-      <header className="container mx-auto">
+    <main>
+      {/* Desktop Header */}
+
+      <header className="container mx-auto hidden md:block lg:block">
         <section className="flex items-center justify-between">
           {/* Logo */}
           <figure>
@@ -39,7 +54,7 @@ const Header = () => {
             <ul className="flex gap-10 uppercase">
               {menuItems.map((item, index) => {
                 return (
-                  <Link to={item.link}>
+                  <Link to={item.link} key={index}>
                     <li
                       key={index}
                       className="cursor-pointer text-lg font-normal"
@@ -51,6 +66,61 @@ const Header = () => {
               })}
             </ul>
           </nav>
+        </section>
+      </header>
+
+      {/* Mobile Menu  */}
+      <header className="container mx-auto block md:hidden lg:hidden relative">
+        <section className="flex items-center justify-between">
+          {/* Logo */}
+          <div>
+            <figure>
+              <img src={logo} className="w-28" alt="chetan_cinemas_logo" />
+            </figure>
+          </div>
+
+          <div className="flex  items-center justify-center">
+            {toggle ? (
+              <>
+                <FaTimes
+                  className="text-4xl absolute right-3"
+                  onClick={toggleMenu}
+                />
+
+                {/* navigation menu */}
+                <div className="absolute top-[100%] right-0 w-[100%] z-50">
+                  <nav>
+                    <ul className="py-20 flex flex-col gap-10 uppercase items-center justify-center text-white bg-black">
+                      {menuItems.map((item, index) => {
+                        return (
+                          <Link to={item.link} key={index}>
+                            <li
+                              key={index}
+                              className="cursor-pointer text-lg font-normal"
+                            >
+                              {item.name}
+                            </li>
+                          </Link>
+                        );
+                      })}
+                      <div className="flex gap-5">
+                        <FaFacebook className="text-4xl bg-[#eb2beb] p-[5px] rounded-lg" />
+                        <FaInstagram className="text-4xl bg-[#eb2beb] p-[5px] rounded-lg" />
+                        <FaYoutube className="text-4xl bg-[#eb2beb] p-[5px] rounded-lg" />
+                      </div>
+                    </ul>
+                  </nav>
+                </div>
+              </>
+            ) : (
+              <>
+                <FaAlignRight
+                  className="text-4xl absolute right-3"
+                  onClick={toggleMenu}
+                />
+              </>
+            )}
+          </div>
         </section>
       </header>
     </main>

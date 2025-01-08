@@ -91,7 +91,7 @@ const About_Us_Skills = () => {
                 <h3 className="text-xl font-semibold text-[#800080] mb-2">
                   {skill.title}
                 </h3>
-                <p className="text-center text-gray-600">{skill.description}</p>
+                <p className="text-center text-black">{skill.description}</p>
               </div>
             ))}
           </div>
@@ -106,12 +106,12 @@ const About_Us_Skills = () => {
             {softSkills.map((skill, index) => (
               <div
                 key={index}
-                className="flex flex-col items-start bg-white p-6 shadow-lg rounded-lg hover:shadow-xl transition duration-300"
+                className="flex flex-col items-center bg-white p-6 shadow-lg rounded-lg hover:shadow-xl transition duration-300"
               >
-                <h3 className="text-xl font-semibold text-[#800080] mb-2">
+                <h3 className="text-xl font-semibold text-center text-[#800080] mb-2">
                   {skill.title}
                 </h3>
-                <p className="text-gray-600">{skill.description}</p>
+                <p className="text-black text-center">{skill.description}</p>
               </div>
             ))}
           </div>

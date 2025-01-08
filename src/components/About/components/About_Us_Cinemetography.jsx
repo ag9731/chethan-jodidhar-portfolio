@@ -7,7 +7,7 @@ const About_Us_Cinemetography = () => {
       <div className="flex flex-col gap-8 justify-center items-center container mx-auto">
         <h1 className="text-4xl font-bold text-[#00000]">
           Cinematographer{" "}
-          <span className="font-signature text-[#800080] text-4xl"> & </span>{" "}
+          <span className="font-signature text-[#800080] text-4xl">&</span>{" "}
           Director of Photography
         </h1>
         <p className="text-center">

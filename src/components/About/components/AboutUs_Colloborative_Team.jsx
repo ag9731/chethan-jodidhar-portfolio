@@ -7,8 +7,8 @@ const AboutUs_Colloborative_Team = () => {
       <div className="flex flex-col gap-8 justify-center items-center container mx-auto">
         <h1 className="text-4xl font-bold text-[#00000]">
           Efficiency{" "}
-          <span className="font-signature text-[#800080] text-4xl">In </span>{" "}
-          Production
+          <span className="font-signature text-[#800080] text-4xl">In</span>
+          {" "}{" "}Production
         </h1>
         <p className="text-center">
           Renowned for his quick and efficient production schedules, Chethan is
