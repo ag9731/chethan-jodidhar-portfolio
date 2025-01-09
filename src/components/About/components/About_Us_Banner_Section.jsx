@@ -1,4 +1,5 @@
 import React from "react";
+import bannerImage from "../../../assets/About_Us/About_Us_Banner.webp";
 
 const About_Us_Banner_Section = () => {
   return (
