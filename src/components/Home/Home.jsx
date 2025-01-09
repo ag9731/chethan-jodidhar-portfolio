@@ -16,9 +16,9 @@ const Home = () => {
       <Home_Page_About_Us/>
       <Home_Page_About_Us2/>
       <HomePageCountSection/>
-      <Home_Page_Gallery_Section/>
       <Home_Page_StyleOfWorking_Section/>
-      <Home_Page_Contact_Section2/>
+      <Home_Page_Gallery_Section/>
+      {/* <Home_Page_Contact_Section2/> */}
       <Home_Page_Experience_Section/>
       <Home_Page_Contact_Us/>
     </div>

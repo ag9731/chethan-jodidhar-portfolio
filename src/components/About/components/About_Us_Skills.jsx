@@ -78,7 +78,7 @@ const About_Us_Skills = () => {
 
         {/* Technical Skills */}
         <div className="mb-16">
-          <h2 className="text-2xl font-bold text-[#000000] mb-8">
+          <h2 className="text-2xl font-bold text-[#000000] mb-8 text-center lg:text-start">
             Technical Expertise
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -99,7 +99,7 @@ const About_Us_Skills = () => {
 
         {/* Soft Skills */}
         <div>
-          <h2 className="text-2xl font-bold text-[#000000] mb-8">
+          <h2 className="text-2xl font-bold text-[#000000] mb-8  text-center lg:text-start">
             Soft Skills
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

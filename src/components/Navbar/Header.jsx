@@ -24,6 +24,7 @@ const Header = () => {
     },
     {
       name: "Gallery",
+      link: "/chethan-jodidhar/gallery",
     },
     {
       name: "Contact",

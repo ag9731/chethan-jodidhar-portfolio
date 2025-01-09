@@ -3,8 +3,8 @@ import React from 'react'
 const Home_Page_StyleOfWorking_Section = () => {
   return (
     <section className="bg-[#faf5fa] py-24">
-      <div className="flex flex-col items-center justify-center gap-8 container mx-auto">
-        <h1 className="text-4xl text-center font-bold text-[#363636]">
+      <div className="flex flex-col items-center justify-center gap-5 lg:gap-8 container mx-auto">
+        <h1 className="text-4xl px-5 lg:px-0 text-center font-bold text-[#363636]">
           Filmmaking{" "}
           <span className="font-signature text-[#800080] text-5xl px-1">
             Style &
@@ -12,7 +12,7 @@ const Home_Page_StyleOfWorking_Section = () => {
           {"  "}
           Approach
         </h1>
-        <p className="text-center leading-6">
+        <p className="text-center px-4 leading-6">
           Chethan's filmmaking style is deeply rooted in the masala genre, where
           he masterfully blends action, drama, comedy, betrayal, revenge, and
           redemption. Although he made his debut with a genre-specific thriller,
@@ -22,7 +22,7 @@ const Home_Page_StyleOfWorking_Section = () => {
           for tackling contemporary social issues, often weaving vigilante
           themes into gripping stories.
         </p>
-        <p className="text-center leading-6">
+        <p className="text-center px-4 leading-6">
           His filmmaking is marked by sharp direction, quick production
           schedules, and a precise balance between creative and production
           demands. Chethan’s ability to push boundaries both creatively and
