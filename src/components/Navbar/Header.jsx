@@ -6,6 +6,9 @@ import { FaTimes, FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 
 
 const Header = () => {
+
+  
+
   const menuItems = [
     {
       name: "Home",
@@ -33,6 +36,9 @@ const Header = () => {
   ];
 
   const [toggle, setToggle] = useState(false);
+ const [servicesOpen, setServicesOpen] = useState(false);
+
+ const toggleServices = () => setServicesOpen(!servicesOpen);
 
   const toggleMenu = () => {
     setToggle((prevState) => !prevState);
@@ -80,7 +86,7 @@ const Header = () => {
             </figure>
           </div>
 
-          <div className="flex  items-center justify-center">
+          <div className="flex items-center justify-center">
             {toggle ? (
               <>
                 <FaTimes
@@ -88,16 +94,23 @@ const Header = () => {
                   onClick={toggleMenu}
                 />
 
-                {/* navigation menu */}
-                <div className="absolute top-[100%] right-0 w-[100%] z-50">
+                {/* Navigation menu */}
+                <div
+                  className={`absolute top-[100%] right-0 w-full z-50 bg-black transition-all duration-500 ease-in-out ${
+                    toggle
+                      ? "opacity-100 translate-y-0"
+                      : "opacity-0 -translate-y-10"
+                  }`}
+                >
                   <nav>
-                    <ul className="py-20 flex flex-col gap-10 uppercase items-center justify-center text-white bg-black">
+                    <ul className="py-20 flex flex-col gap-10 uppercase items-center justify-center text-white">
                       {menuItems.map((item, index) => {
                         return (
                           <Link to={item.link} key={index}>
                             <li
                               key={index}
                               className="cursor-pointer text-lg font-normal"
+                              onClick={toggleMenu}
                             >
                               {item.name}
                             </li>

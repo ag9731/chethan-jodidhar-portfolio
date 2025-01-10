@@ -88,7 +88,7 @@ const About_Us_Skills = () => {
                 className="flex flex-col items-center bg-white p-6 shadow-lg rounded-lg hover:shadow-xl transition duration-300"
               >
                 <div className="mb-4">{skill.icon}</div>
-                <h3 className="text-xl font-semibold text-[#800080] mb-2">
+                <h3 className="text-xl font-semibold text-[#800080] mb-2 text-center">
                   {skill.title}
                 </h3>
                 <p className="text-center text-black">{skill.description}</p>
