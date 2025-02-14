@@ -11,19 +11,19 @@ import CountUp from "react-countup";
 const HomePageCountSection = () => {
   const countArray = [
     {
-      number: 100,
+      number: 2,
       title: "Directed Movies",
     },
     {
-      number: 500,
-      title: "Projects Completed",
+      number: 80,
+      title: "+ Ads, Promos Completed",
     },
     {
-      number: 200,
+      number: 7,
       title: "Projects Ongoing",
     },
     {
-      number: 50,
+      number: 2,
       title: "Awards Won",
     },
   ];
