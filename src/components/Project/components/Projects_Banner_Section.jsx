@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import banner from "../../../assets/Projects/chethan_jodidhar_projects_banner.webp";
+import timepass2025 from "../../../assets/Projects/ChethanJodidharProjects/timepass2025.webp";
 import project1 from "../../../assets/Projects/ChethanJodidharProjects/project1.webp";
 import cameo from "../../../assets/Projects/ChethanJodidharProjects/chethanjodidharprojects.webp";
 
 const Projects_Banner_Section = () => {
   const array = [
     {
-      img: project1,
+      img: timepass2025,
       project: "Timepass",
       year: "2025",
       alt: "chethan_jodidhar",

@@ -8,6 +8,7 @@ import Home_Page_StyleOfWorking_Section from './components/Home_Page_StyleOfWork
 import Home_Page_Experience_Section from './components/Home_Page_Experience_Section'
 import Home_Page_Contact_Us from './components/Home_Page_Contact_Us'
 import Home_Page_Contact_Section2 from './components/Home_Page_Contact_Section2'
+import ContactMap from '../Contact/components/ContatMap'
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
       {/* <Home_Page_Contact_Section2/> */}
       <Home_Page_Experience_Section/>
       <Home_Page_Contact_Us/>
+      <ContactMap/>
     </div>
   )
 }

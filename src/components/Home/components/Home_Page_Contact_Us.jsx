@@ -147,8 +147,11 @@ const Home_Page_Contact_Us = () => {
           </p>
           <p className="text-lg text-[#363636]">
             • Phone:{" "}
-            <a href="tel:+918147603092" className="text-[#800080]">
-              +91 8147603092
+            <a
+              href="tel:+918971976109"
+              className="text-[#800080]"
+            >
+              +91 8971976109
             </a>
           </p>
         </div>
