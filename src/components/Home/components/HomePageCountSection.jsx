@@ -16,7 +16,7 @@ const HomePageCountSection = () => {
     },
     {
       number: 80,
-      title: "+ Ads, Promos Completed",
+      title: "Ad Shoots, Promo Videos Completed",
     },
     {
       number: 7,
