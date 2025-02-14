@@ -56,7 +56,7 @@ const ContactUsBanner = () => {
           </div>
           <div className="flex items-center gap-3 text-lg text-gray-700">
             <MdPhone className="text-[#48A77E] text-2xl" />
-            <span>+91 8147603092</span>
+            <span>+91 8971976109</span>
           </div>
           <div className="flex gap-5 mt-5">
             <a

@@ -4,11 +4,7 @@ import { Link } from "react-router-dom";
 import { FaAlignRight } from "react-icons/fa6";
 import { FaTimes, FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 
-
 const Header = () => {
-
-  
-
   const menuItems = [
     {
       name: "Home",
@@ -36,14 +32,13 @@ const Header = () => {
   ];
 
   const [toggle, setToggle] = useState(false);
- const [servicesOpen, setServicesOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
 
- const toggleServices = () => setServicesOpen(!servicesOpen);
+  const toggleServices = () => setServicesOpen(!servicesOpen);
 
   const toggleMenu = () => {
     setToggle((prevState) => !prevState);
   };
-
 
   return (
     <main>
@@ -53,7 +48,7 @@ const Header = () => {
         <section className="flex items-center justify-between">
           {/* Logo */}
           <figure>
-            <img src={logo} className="w-28" alt="chetan_cinemas_logo" />
+            <img src={logo} className="w-28 p-3" alt="chetan_cinemas_logo" />
           </figure>
 
           {/* Navigation Menu */}
