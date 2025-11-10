@@ -21,9 +21,7 @@ const Footer = () => {
       </footer>
       {/* Sub Footer */}
       <div className="sub-footer text-white text-center py-4">
-        <a href="https://innomatricstech.com/">
-          <p className="text-sm">Powered by INNOMATRICS TECH.</p>
-        </a>
+        
       </div>
     </main>
   );
